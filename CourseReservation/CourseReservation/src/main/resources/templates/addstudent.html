@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="Big5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Course</title>
+</head>
+<body>
+<h1>Register Student for a Course</h1>
+<form th:action="@{/addstudent}" method="post">
+    <label for="studentName">Student name:</label>
+    <input type="text" id="studentName" name="studentName" th:value="${studentName}" required><br><br>
+
+
+
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
